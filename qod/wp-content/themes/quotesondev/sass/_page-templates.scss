@@ -1,0 +1,128 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+// Front Page
+
+.info-chunk{
+	font-size: 20px;
+    font-weight: 100;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-include{
+    display:flex;
+}
+.another-button{
+	margin-left: 1em;
+    background: transparent;
+    color: #00cc00;
+    border: #00cc00 solid 2px;
+    height: 40px;
+    width: 200px;
+    margin-top: 1em;
+}
+
+.home i {
+    display:none;
+}
+.page i {
+    display:none;
+}
+
+
+@include tablet{
+    .logo{
+        background-size: 500px;
+    }
+
+    .info-chunk{
+        font-size:30px;
+        display: flex;
+    }
+
+    .another-button{
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    margin-left:0;
+    }
+
+    .entry-header{
+        font-size:20px;
+    }
+}
+
+@include desktop{
+    .home i {
+        display:inline;
+        color:#00cc00;
+        font-size:100px;
+        
+    }
+
+    .page i{
+        display:inline;
+        color:#00cc00;
+        font-size:100px;
+        
+    }
+
+    .info-chunk{
+        display: flex;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    
+
+    .home .entry-content p {
+        font-size:40px;
+    }
+
+    .logo{
+        margin-left: 280px;
+        height: 120px;
+        background-size:700px;
+    }
+
+    .another-button{
+        margin-left: 40%;
+    }
+    .quote-include{
+        display: flex;
+        margin-left: 6em;
+        margin-right: 6em;
+        margin-top: 2em;
+    }
+    }
+
+
+    // about page
+
+    .about-info{
+        font-size: 16px;
+        a{
+            color:#00cc00;
+        }
+    }
+
+    
+
+    .page .fa-quote-right{
+        margin-left: 5em;
+    }
+   
+    .page .entry-header{
+        font-size: 32px;
+        font-weight: 500;
+        margin-top: 10px;    
+    }
+
+    @include tablet{
+        .page .entry-header{
+            margin-top:50px;
+        }
+    }

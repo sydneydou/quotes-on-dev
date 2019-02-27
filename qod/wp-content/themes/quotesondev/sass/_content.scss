@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 $base__space-unit;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base__space-unit 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+
+.title{
+	font-size:20px;
+}
+
+.logo{
+    background-image: url(../../assets/qod-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 80px;
+    margin-left: 1em;
+    margin-top: 4em;
+}
+
+body{
+	background-color:#222222;
+	color:white;
+	font-family: 'Exo';
+
+}
