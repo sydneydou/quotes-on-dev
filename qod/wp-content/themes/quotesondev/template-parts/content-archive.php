@@ -19,24 +19,24 @@
 <!-- authors -->
 	<div class="archive-page">
 			<div class="author-archive">
-			<h2> Quote Authors </h2>
-				<ul>
-					<?php
+				<h2> Quote Authors </h2>
+					<ul>
+						<?php
 
-				global $post;
-				$args = array('posts_per_page' => 55);
+						global $post;
+						$args = array('posts_per_page' => 55);
 
-				$myposts = get_posts($args); ?>
+						$myposts = get_posts($args); ?>
 						
-					<?php foreach ($myposts as $post) : setup_postdata($post); ?>
+						<?php foreach ($myposts as $post) : setup_postdata($post); ?>
 				
 						<li>
 							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 						</li>
-					<?php endforeach;
-				wp_reset_postdata(); ?>
+						<?php endforeach;
+						wp_reset_postdata(); ?>
 
-				</ul>
+					</ul>
 			</div>
 
 			<!-- categories -->
@@ -52,17 +52,17 @@
 
 
 			<!-- tags -->
-			<?php if (function_exists('wp_tag_cloud')) : ?>
+				<?php if (function_exists('wp_tag_cloud')) : ?>
 
-				<h2>Tags</h2>
-					<ul>
-						<li><?php wp_tag_cloud('smallest=1&largest=1&unit=rem'); ?></li>
-					</ul>
+						<h2>Tags</h2>
+						<ul>
+							<li><?php wp_tag_cloud('smallest=1&largest=1&unit=rem'); ?></li>
+						</ul>
 
-			<?php endif; ?>
+				<?php endif; ?>
 
-	</div>		
-						</div>
+			</div>		
+	</div>
 	<i class="fas fa-quote-right"></i>
 </div>
 

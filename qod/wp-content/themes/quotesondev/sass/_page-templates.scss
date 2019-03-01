@@ -27,7 +27,8 @@
     margin-top: 1em;
 }
 
-i{
+
+.home i, .page i{
     display:none;
 }
 
@@ -38,16 +39,19 @@ i{
         background-size: 500px;
     }
 
-    .info-chunk, .about-info{
+    .info-chunk{
         font-size:30px;
         display: flex;
+    }
+    .about-info{
+        font-size:30px;
     }
 
     .another-button{
     height: 50px;
     width: 250px;
     font-size: 20px;
-    margin-left:0;
+    margin-left:1em;
     }
 
     .entry-header{
@@ -56,6 +60,11 @@ i{
     .main-navigation{
         flex-wrap:nowrap;
         width: 100%;
+    }
+
+    .page .main-navigation{
+        margin-left:1em;
+        margin-top: 2em;
     }
 }
 
@@ -102,9 +111,9 @@ i{
     }
 
     .main-navigation{
-        margin-left: 50%;
+        padding-left: 50%;
         flex-wrap:nowrap;  
-         width: 100%;
+        width: 100%;
         
     }
     }
@@ -135,6 +144,8 @@ i{
         .page .entry-header{
             margin-top:50px;
         }
+
+        
     }
 
     @include desktop{
@@ -193,6 +204,15 @@ li{
 
 .page-title{
     margin-left: 20px;
+    margin-right: 1em;
+}
+
+.page-title{
+    border-bottom: 1px dashed white;
+}
+
+i{
+    display:none;
 }
 
 }
@@ -208,9 +228,54 @@ li{
     flex-wrap: wrap;
 }
 
-.archive i{
-    display:none;
+.number-pagination{
+    margin-left:1em;
+    color:#00cc00;
+    text-decoration:none;
+
+    a{
+        padding-left:1em;
+        color:#00cc00;
+        text-decoration:none;
+    }
 }
+
+@include tablet{
+    .archive{
+        .quote-include{
+        margin-left:2em;
+        margin-right:2em;
+    }
+    .page-title{
+        margin-left: 2em;
+        margin-right: 1em;
+        padding-bottom: 1em;
+    }
+
+    .logo{
+        margin-left: 3.5em;
+    margin-bottom: 3em;
+    }
+
+}
+    .number-pagination{
+        margin-left:2em;
+    }
+}
+
+@include desktop{
+    .archive{
+        .logo{
+            margin-left: 280px;
+            height: 120px;
+            background-size: 700px;
+        }
+    }
+    .number-pagination{
+        margin-left:18em;
+    }
+}
+
     //submit page 
 
     .quote-submission-form input, .quote-submission-form textarea{
@@ -247,21 +312,34 @@ li{
             .page-header{
                 width:700px;
                 margin-right: 2em;
-                margin-left: 2em;
+                margin-left: 2em; 
+                
             }
         }
-        .archive .quote-include{
-            margin-left: 18em;
-            width:700px;
-        }
-        .archive .info-chunk{
-            margin-left:0;
-            margin-right:0;
-        }
-        .archive .entry-content{
-            margin:0;
-        }
 
+        .archive {
+
+             .quote-include{
+                 margin-left: 18em;
+                width:700px;
+             }
+
+            .info-chunk{
+                margin-left: 0em;
+                margin-right: 0em;
+            }
+
+            .entry-content{
+                 margin:0;
+            }
+
+            .page-title{
+                padding-bottom: 1em;
+                margin-left:0;
+                margin-right:0;
+            }
+            }
+       
         .category .archive-quote{
             margin-top: 2em;
         }
@@ -281,4 +359,38 @@ li{
         }
 
        
+    }
+
+    //404 page
+
+    .error404{
+
+    i{
+        display:none;
+    }
+    .page-content{
+        font-size:16px;
+    }
+
+    .search-field{
+        background:#222;
+    }
+
+    .page-title{
+        font-size: 30px;
+    }
+}
+
+
+    @include desktop{
+        .error404 {
+            i{
+            display:inline;
+            color:#00cc00;
+            font-size:100px;
+        }
+        .about-section{
+            width:900px;
+        }
+    }
     }
