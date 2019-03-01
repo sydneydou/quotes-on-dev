@@ -3,7 +3,7 @@
     let lastPage = '';
 
     //make back / forward nav work with history API
-    $(window).on('popstate',function(){
+    $(window).on('popstate', function () {
         window.location.replace(lastPage);
     });
 
@@ -64,8 +64,13 @@
         }).done(function () {
             console.log('done');
 
-            $('.quote-submission-form').html('<p>Thanks, your quote submission was recieved!</p>');
+            $("#submit-form").slideUp("slow", function () {
+                $('.quote-submission-form').html('<p>Thanks, your quote submission was recieved!</p>');
+            });
 
+
+        }).fail(function () {
+            alert("There was an error with your submission, please try again.");
         });
     });
 
