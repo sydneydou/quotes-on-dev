@@ -53,5 +53,9 @@ function qod_quotes( $query ) {
         return;
     }
 
+    if( is_archive()){
+        $query->set( 'posts_per_page', 5 );
+    }
+
 }
 add_action( 'pre_get_posts', 'qod_quotes', 1 );

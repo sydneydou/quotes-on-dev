@@ -93,9 +93,11 @@ function qod_get() {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'qod_quote', $script_url, array( 'jquery' ), false, true );
    wp_localize_script( 'qod_quote', 'qod_vars', array(
+	   'home_url' => esc_url_raw( home_url()),
        'rest_url' => esc_url_raw( rest_url() ),
        'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
-       'post_id' => get_the_ID()
+	   'success' => 'Thanks, your quote submission was recieved!',
+	   'failure' => 'Your submission could not be processed.',
    ) );
  }
  add_action( 'wp_enqueue_scripts', 'qod_get' );

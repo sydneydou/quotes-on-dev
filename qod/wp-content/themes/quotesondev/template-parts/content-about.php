@@ -10,6 +10,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="quote-include">
+	<div class="about-section">
 	<i class="fas fa-quote-left"></i>
 	<div class="info-chunk">
 		<header class="entry-header">
@@ -22,6 +23,7 @@
                 <p>This site&nbsp;is heavily inspired by Chris Coyier’s&nbsp;<a href="http://quotesondesign.com/" target="_blank" rel="noreferrer noopener">Quotes on Design</a>.</p>
             </div>
 		</div>
+</div>
 		<i class="fas fa-quote-right"></i>
 </div>
 

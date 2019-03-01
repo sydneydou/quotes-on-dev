@@ -15,6 +15,7 @@
 
 .quote-include{
     display:flex;
+    
 }
 .another-button{
 	margin-left: 1em;
@@ -26,20 +27,18 @@
     margin-top: 1em;
 }
 
-.home i {
+i{
     display:none;
 }
-.page i {
-    display:none;
-}
+
 
 
 @include tablet{
-    .logo{
+    .logo, .page .logo{
         background-size: 500px;
     }
 
-    .info-chunk{
+    .info-chunk, .about-info{
         font-size:30px;
         display: flex;
     }
@@ -54,10 +53,14 @@
     .entry-header{
         font-size:20px;
     }
+    .main-navigation{
+        flex-wrap:nowrap;
+        width: 100%;
+    }
 }
 
 @include desktop{
-    .home i {
+    .home i, .page i{
         display:inline;
         color:#00cc00;
         font-size:100px;
@@ -82,7 +85,7 @@
         font-size:40px;
     }
 
-    .logo{
+    .logo, .page .logo{
         margin-left: 280px;
         height: 120px;
         background-size:700px;
@@ -97,6 +100,13 @@
         margin-right: 6em;
         margin-top: 2em;
     }
+
+    .main-navigation{
+        margin-left: 50%;
+        flex-wrap:nowrap;  
+         width: 100%;
+        
+    }
     }
 
 
@@ -109,20 +119,166 @@
         }
     }
 
-    
-
-    .page .fa-quote-right{
-        margin-left: 5em;
-    }
    
     .page .entry-header{
         font-size: 32px;
         font-weight: 500;
-        margin-top: 10px;    
+        margin-top: 10px;  
+    }
+
+    .about-section{
+        display:flex;
+        
     }
 
     @include tablet{
         .page .entry-header{
             margin-top:50px;
         }
+    }
+
+    @include desktop{
+        .about-info{
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .archive i{
+        display:inline;
+        color:#00cc00;
+        font-size:100px;
+        }
+
+    
+    }
+
+
+    //archive page 
+.archive-chunk{
+    display: flex;
+    margin-left: 1em;
+    flex-direction: column;
+}
+
+
+.archive-page{
+
+ ul{
+    margin-left:0;
+    list-style-type: none;
+    padding-left:0;
+}
+
+a{
+    color:#00cc00;
+    text-decoration:none;
+}
+
+li{
+    padding-right: 1em;
+    line-height: 2;
+}
+
+}
+.archive{
+
+ .quote-include{
+    border-bottom: white dashed 1px;
+}
+
+.entry-header{
+    margin-bottom:2em;
+}
+
+.page-title{
+    margin-left: 20px;
+}
+
+}
+
+
+.author-archive ul{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.category-archive ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.archive i{
+    display:none;
+}
+    //submit page 
+
+    .quote-submission-form input, .quote-submission-form textarea{
+      background-color: #222222;
+      border:1px solid #00cc00;
+    }
+
+    .quote-submission-form p{
+        font-size:18px;
+    }
+
+    .quote-submission-form a{
+        font-size:18px;
+        color:#00cc00;
+        text-decoration:none;
+    }
+
+    .submit-button{
+        margin-top: 1em;
+        color:#00cc00;
+        border:1px solid #00cc00;
+        background:#222222;
+    }
+
+    .submit-chunk{
+        width:600px;
+    }
+
+    @include desktop{
+        .archive-quote{
+            display:flex;
+            margin-left: 10em;
+
+            .page-header{
+                width:700px;
+                margin-right: 2em;
+                margin-left: 2em;
+            }
+        }
+        .archive .quote-include{
+            margin-left: 18em;
+            width:700px;
+        }
+        .archive .info-chunk{
+            margin-left:0;
+            margin-right:0;
+        }
+        .archive .entry-content{
+            margin:0;
+        }
+
+        .category .archive-quote{
+            margin-top: 2em;
+        }
+
+        .archive-chunk{
+            margin-left: 3em;
+        }
+    }
+
+    //single page
+
+    @include desktop{
+        .single i, .archive i{
+            display:inline;
+            color:#00cc00;
+            font-size:100px;
+        }
+
+       
     }

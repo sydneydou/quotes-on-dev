@@ -16,7 +16,7 @@
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-content -->
 		<header id="author" class="entry-header">
-			<span id="media-source">- <?php the_title(); ?></span>
+			<span id="media-source">-<?php the_title(); ?></span>
 		</header><!-- .entry-header -->
 		</div>
 		<i class="fas fa-quote-right"></i>

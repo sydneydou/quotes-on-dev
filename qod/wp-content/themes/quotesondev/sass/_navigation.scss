@@ -28,10 +28,17 @@ a {
 
 .main-navigation {
 	clear: both;
-	margin-top: 4em;
-	display: block;
-	float: left;
-	width: 100%;
+    padding-bottom: 3em;
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2;
+    float: left;
+    width: 300px;
+
+	p{
+		margin:0;
+	}
 
 	ul {
 		display: none;
@@ -86,7 +93,7 @@ a {
 		}
 	}
 	a {
-		display: block;
+		
 		text-decoration: none;
 	}
 
@@ -133,7 +140,13 @@ a {
 }
 
 .main-navigation a{
-	padding:10px;
+	padding-right: 10px;
+    padding-left: 10px;
 	color:#00cc00;
 	font-weight:100;
 }
+
+.broughtby{
+	padding-left: 10px;
+}
+
