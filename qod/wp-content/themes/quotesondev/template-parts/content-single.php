@@ -14,11 +14,11 @@
 	
 	
 	<div class="info-chunk">
-		<div  id="post-quote" class="entry-content">
+		<div class="entry-content post-quote">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-content -->
-		<header id="author" class="entry-header">
-			<span id="media-source">-<?php the_title(); ?></span>
+		<header  class="entry-header author">
+			<span class="media-source">-<?php the_title(); ?></span>
 		</header><!-- .entry-header -->
 		</div>
 			

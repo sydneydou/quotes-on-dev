@@ -21,11 +21,11 @@
 
             .done(function (response) {
                 console.log(response);
-                $('#post-quote').html(response[0].excerpt.rendered);
-                $('#author').html(response[0].title.rendered);
+                $('.post-quote').html(response[0].excerpt.rendered);
+                $('.author').html(response[0].title.rendered);
 
                 if (response[0]._qod_quote_source_url && response[0]._qod_quote_source) {
-                    $('#author').append(`<a target='_blank' class='author-source'
+                    $('.author').append(`<a target='_blank' class='author-source'
                           href=${response[0]._qod_quote_source_url}
                           >, ${response[0]._qod_quote_source}</a>`)
                 }

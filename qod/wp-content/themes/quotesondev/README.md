@@ -1,23 +1,18 @@
-# Quotes on Dev Starter
+# Quotes on Dev 
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+In this project 5 for RED Academy Web Development program, I incorporate Ajax in Wordpress, and the WP REST API, to create a responsive webpage displaying various quote about development.
 
-## Installation
+#Features
 
-### 1. Download me (don't clone me!)
+Quotes On Dev has multiple different mobile and tablet-friendly pages written in PHP and HTML. This includes the home page that uses Ajax to show new quotes, an archive page that categorizes authors, categories and tags, an about page and a page to submit a quote to be approved by the site administrator.
 
-Then add me to your `wp-content/themes` directory.
-
-### 2. Rename the `quotesondev-starter-master` directory
-
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
+## Tools and Languages Used
+- HTML
+- CSS (Sass)
+- PHP
+- Javascript (JQuery)
+- Ajax
+- WP REST API
+- Gulp
+- Git
+- Terminal

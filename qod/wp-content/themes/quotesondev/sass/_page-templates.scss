@@ -60,6 +60,8 @@
     .main-navigation{
         flex-wrap:nowrap;
         width: 100%;
+        margin-left: .8em;
+    
     }
 
     .page .main-navigation{
@@ -175,6 +177,8 @@
 }
 
 
+
+
 .archive-page{
 
  ul{
@@ -196,21 +200,29 @@ li{
 }
 .archive{
 
- .quote-include{
+.quote-include{
     border-bottom: white dashed 1px;
 }
 
+
+
 .entry-header{
-    margin-bottom:2em;
+    padding-bottom:2em;
+    
 }
 
 .page-title{
     margin-left: 20px;
+    padding-bottom: 1em;
     margin-right: 1em;
 }
 
 .page-title{
     border-bottom: 1px dashed white;
+}
+
+.page-numbers{
+    padding-right: 1em;
 }
 
 i{
@@ -236,7 +248,7 @@ i{
     text-decoration:none;
 
     a{
-        padding-left:1em;
+        padding:1em;
         color:#00cc00;
         text-decoration:none;
     }
@@ -249,7 +261,8 @@ i{
         margin-right:2em;
     }
     .page-title{
-        margin-left: 2em;
+        margin-left: 1em;
+        padding-left: 1em;
         margin-right: 1em;
         padding-bottom: 1em;
     }
@@ -262,6 +275,10 @@ i{
 }
     .number-pagination{
         margin-left:2em;
+    }
+
+    .category .main-navigation{
+        margin-left:3em;
     }
 }
 
@@ -327,6 +344,7 @@ i{
              .quote-include{
                  margin-left: 18em;
                 width:700px;
+                border-bottom: 1px dashed #fff;
              }
 
             .info-chunk{
@@ -340,6 +358,7 @@ i{
 
             .page-title{
                 padding-bottom: 1em;
+                padding-left: 0;
                 margin-left:0;
                 margin-right:0;
             }
@@ -363,6 +382,9 @@ i{
     }
 
     //single page
+    .single i{
+        display:none;
+    }
 
     @include desktop{
         .single i, .archive i{
