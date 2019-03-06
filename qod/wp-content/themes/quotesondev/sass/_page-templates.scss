@@ -20,8 +20,8 @@
 .another-button{
 	margin-left: 1em;
     background: transparent;
-    color: #00cc00;
-    border: #00cc00 solid 2px;
+    color: $color__text-link;
+    border: $color__text-link solid 2px;
     height: 40px;
     width: 200px;
     margin-top: 1em;
@@ -73,14 +73,14 @@
 @include desktop{
     .home i, .page i{
         display:inline;
-        color:#00cc00;
+        color:$color__text-link;
         font-size:100px;
         
     }
 
     .page i{
         display:inline;
-        color:#00cc00;
+        color:$color__text-link;
         font-size:100px;
         
     }
@@ -127,7 +127,7 @@
     .about-info{
         font-size: 16px;
         a{
-            color:#00cc00;
+            color:$color__text-link;
         }
     }
 
@@ -161,7 +161,7 @@
 
         .archive i{
         display:inline;
-        color:#00cc00;
+        color:$color__text-link;
         font-size:100px;
         }
 
@@ -188,7 +188,7 @@
 }
 
 a{
-    color:#00cc00;
+    color:$color__text-link;
     text-decoration:none;
 }
 
@@ -244,12 +244,12 @@ i{
 
 .number-pagination{
     margin-left:1em;
-    color:#00cc00;
+    color:$color__text-link;
     text-decoration:none;
 
     a{
         padding:1em;
-        color:#00cc00;
+        color:$color__text-link;
         text-decoration:none;
     }
 }
@@ -298,8 +298,8 @@ i{
     //submit page 
 
     .quote-submission-form input, .quote-submission-form textarea{
-      background-color: #222222;
-      border:1px solid #00cc00;
+      background-color: $color__main-background;
+      border:1px solid $color__text-link;
     }
 
     .quote-submission-form p{
@@ -308,15 +308,15 @@ i{
 
     .quote-submission-form a{
         font-size:18px;
-        color:#00cc00;
+        color:$color__text-link;
         text-decoration:none;
     }
 
     .submit-button{
         margin-top: 1em;
-        color:#00cc00;
-        border:1px solid #00cc00;
-        background:#222222;
+        color:$color__text-link;
+        border:1px solid $color__text-link;
+        background:$color__main-background;
     }
 
     .submit-chunk{
@@ -408,7 +408,7 @@ i{
     }
 
     .search-field{
-        background:#222;
+        background:$color__main-background;
         border: #00cc00 solid 2px;
         width: 250px;
     }
@@ -428,7 +428,7 @@ i{
     }
 
     .search-submit{
-        background: #2222;
+        background: $color__main-background;
         border: none;
     }
 

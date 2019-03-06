@@ -861,7 +861,7 @@ object {
     margin-left: 18em; } }
 
 .quote-submission-form input, .quote-submission-form textarea {
-  background-color: #222222;
+  background-color: #222;
   border: 1px solid #00cc00; }
 
 .quote-submission-form p {
@@ -876,7 +876,7 @@ object {
   margin-top: 1em;
   color: #00cc00;
   border: 1px solid #00cc00;
-  background: #222222; }
+  background: #222; }
 
 .submit-chunk {
   width: 600px; }
@@ -945,7 +945,7 @@ object {
   margin-left: 1em; }
 
 .error404 .search-submit {
-  background: #2222;
+  background: #222;
   border: none; }
 
 .error404 .fa-search {
