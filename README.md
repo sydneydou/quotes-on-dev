@@ -10,11 +10,11 @@ I really enjoyed this project because it gave me additional opportunities to uti
 
 ## Screenshots
 
-![alt text](qod/wp-content/themes/quotesondev/qod-home.png)
+![alt text](qod-home.png)
 
-![alt text](qod/wp-content/themes/quotesondev/qod-archive.png)
+![alt text](qod-archive.png)
 
-![alt text](qod/wp-content/themes/quotesondev/qod-submit.png)
+![alt text](qod-submit.png)
 
 ## Getting Started
 
