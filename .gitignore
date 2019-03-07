@@ -26,9 +26,3 @@ node_modules/
 
 # Ignore files #
 
-/* 
-!themes/
-!.gitignore
-!README.md
-!plugins/
-!uploads/
