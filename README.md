@@ -2,6 +2,10 @@
 
 Customized wordpress theme for a programming quote generator using the WP REST API and Ajax, creating fully responsive webpages.
 
+<<<<<<< HEAD
+=======
+# Features
+>>>>>>> a4fa1ddcc47abd28e4689b39336eeecfeabbc1f0
 
 This particular web application, Quotes on Dev, displays various randomized quotes, as well as the respective sources and authors for those quotes. The authors, quote categories and tags are then categorized in the archive page, allowing for a more personalized user experience. Continually, if the user is logged in, a new quote can be submitted and sent to the user admin, where it may then be approved and published onto the site.
 
